@@ -1,0 +1,98 @@
+/* A modern, clean font from Google Fonts for better readability */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Main container to center the form on the page */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* A soft, light gray background */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* The white card that holds the form elements */
+.form-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* The main heading (e.g., "Sign In") */
+.form-card h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* The <form> element itself */
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Creates consistent space between form fields */
+}
+
+/* Styling for all input fields and the select dropdown */
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Adds a nice blue glow effect when you click on an input field */
+.form-card input:focus,
+.form-card select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* The main submit button */
+.form-card .submit-btn {
+  background: linear-gradient(90deg, #4a90e2, #2a6db1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* A subtle "lift" effect when you hover over the button */
+.form-card .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* The text at the bottom (e.g., "Don't have an account?") */
+.form-card .form-footer-text {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* The link within the footer text */
+.form-card .form-footer-text a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-decoration 0.2s;
+}
+
+.form-card .form-footer-text a:hover {
+  text-decoration: underline;
+}
