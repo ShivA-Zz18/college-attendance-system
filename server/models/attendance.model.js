@@ -12,5 +12,5 @@ const attendanceSchema = new Schema({
   },
 }, { timestamps: true });
 
-module.exports = mongoose.model('Attendance', attendanceSchema);
+module.exports = mongoose.model('Attendance', attendanceSchema)
 

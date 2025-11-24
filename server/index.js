@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 app.use('/api/auth', require('./routes/auth.routes.js'));
 app.use('/api/courses', require('./routes/course.routes.js'));
 app.use('/api/attendance', require('./routes/attendance.routes.js'));
+app.use('/api/admin', require('./routes/admin.routes.js'));
 
 // --- 4. Start the Server ---
 const PORT = process.env.PORT || 5000;
